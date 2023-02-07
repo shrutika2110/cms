@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kofukons",
+  "info": {
+    "singularName": "kofukon",
+    "pluralName": "kofukons",
+    "displayName": "kofukon",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
