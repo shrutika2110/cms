@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_details_details",
+  "info": {
+    "displayName": "Folds",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "firstFold": {
+      "type": "richtext"
+    },
+    "secondFold": {
+      "type": "richtext"
+    },
+    "secondFoldImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

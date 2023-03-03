@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "memoirs",
+  "collectionName": "blog_authors",
   "info": {
-    "singularName": "memoir",
-    "pluralName": "memoirs",
-    "displayName": "memoir",
+    "singularName": "blog-author",
+    "pluralName": "blog-authors",
+    "displayName": "BlogAuthor",
     "description": ""
   },
   "options": {
@@ -12,11 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
-    },
-    "description": {
-      "type": "richtext"
     },
     "image": {
       "type": "media",
@@ -31,6 +28,12 @@
     },
     "altText": {
       "type": "string"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "blog_author"
     }
   }
 }
