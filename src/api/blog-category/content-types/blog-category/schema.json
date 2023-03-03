@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blog-category",
     "pluralName": "blog-categories",
-    "displayName": "BlogCategory"
+    "displayName": "BlogCategory",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,6 +18,12 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog.blog",
+      "inversedBy": "blog_categories"
     }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bottom_menus",
+  "info": {
+    "singularName": "bottom-menu",
+    "pluralName": "bottom-menus",
+    "displayName": "BottomMenu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
