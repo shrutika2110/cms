@@ -52,6 +52,16 @@
       "type": "component",
       "repeatable": false,
       "component": "section.section"
+    },
+    "PersonalisedSearch": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section"
+    },
+    "memoirs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::memoir.memoir"
     }
   }
 }
