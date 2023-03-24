@@ -42,6 +42,97 @@
         "videos",
         "audios"
       ]
+    },
+    "thirdFold": {
+      "type": "richtext"
+    },
+    "thirdFoldImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "forthFold": {
+      "type": "richtext"
+    },
+    "forthFoldImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "fifthFold": {
+      "type": "richtext"
+    },
+    "fifthFoldImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sixthFold": {
+      "type": "richtext"
+    },
+    "sixthFoldImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "seventhFold": {
+      "type": "richtext"
+    },
+    "seventhFoldImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "eightFold": {
+      "type": "richtext"
+    },
+    "eightFoldImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ninethFold": {
+      "type": "richtext"
+    },
+    "ninethFoldImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

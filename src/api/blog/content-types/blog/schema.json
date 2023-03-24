@@ -59,6 +59,21 @@
     },
     "details": {
       "type": "richtext"
+    },
+    "folds": {
+      "type": "component",
+      "repeatable": false,
+      "component": "folds.details"
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
