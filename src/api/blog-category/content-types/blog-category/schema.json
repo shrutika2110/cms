@@ -18,12 +18,6 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
-    },
-    "blogs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::blog.blog",
-      "inversedBy": "blog_categories"
     }
   }
 }

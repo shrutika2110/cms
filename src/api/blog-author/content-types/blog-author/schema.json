@@ -28,12 +28,6 @@
     },
     "altText": {
       "type": "string"
-    },
-    "blogs": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::blog.blog",
-      "mappedBy": "blog_author"
     }
   }
 }

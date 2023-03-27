@@ -14,12 +14,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "blogs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::blog.blog",
-      "inversedBy": "blog_types"
     }
   }
 }

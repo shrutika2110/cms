@@ -12,16 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "Title": {
       "type": "string"
     },
-    "shortDescription": {
-      "type": "string"
+    "shortDes": {
+      "type": "text"
     },
-    "date": {
-      "type": "datetime"
-    },
-    "coverImage": {
+    "coverImg": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -32,48 +29,60 @@
         "audios"
       ]
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
+    "slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "slider.slider"
     },
-    "blog_categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::blog-category.blog-category",
-      "mappedBy": "blogs"
+    "publish_date": {
+      "type": "date"
     },
-    "blog_types": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::blog-type.blog-type",
-      "mappedBy": "blogs"
-    },
-    "blog_author": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::blog-author.blog-author",
-      "inversedBy": "blogs"
-    },
-    "altText": {
-      "type": "string"
-    },
-    "details": {
-      "type": "richtext"
-    },
-    "folds": {
+    "firstFold": {
       "type": "component",
       "repeatable": false,
-      "component": "folds.details"
+      "component": "fold.fold"
+    },
+    "secondFold": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fold.fold"
+    },
+    "thirdFold": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fold.fold"
+    },
+    "fourthFold": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fold.fold"
+    },
+    "fifthFold": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fold.fold"
+    },
+    "sixthFold": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fold.fold"
+    },
+    "good_read": {
+      "type": "boolean"
+    },
+    "recommended": {
+      "type": "boolean"
+    },
+    "pick": {
+      "type": "boolean"
+    },
+    "watch": {
+      "type": "boolean"
     },
     "video": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      "type": "component",
+      "repeatable": false,
+      "component": "video.video"
     }
   }
 }
