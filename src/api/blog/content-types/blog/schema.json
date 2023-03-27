@@ -83,6 +83,22 @@
       "type": "component",
       "repeatable": false,
       "component": "video.video"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "blog_author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog-author.blog-author",
+      "inversedBy": "blog"
+    },
+    "blog_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog-category.blog-category",
+      "inversedBy": "blog"
     }
   }
 }
