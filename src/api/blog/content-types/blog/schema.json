@@ -99,6 +99,9 @@
       "relation": "oneToOne",
       "target": "api::blog-category.blog-category",
       "inversedBy": "blog"
+    },
+    "views": {
+      "type": "biginteger"
     }
   }
 }
