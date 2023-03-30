@@ -19,16 +19,16 @@
       "type": "uid",
       "targetField": "title"
     },
-    "blog": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::blog.blog",
-      "mappedBy": "blog_category"
-    },
     "slider": {
       "type": "component",
       "repeatable": true,
       "component": "slider.slider"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "blog_categories"
     }
   }
 }

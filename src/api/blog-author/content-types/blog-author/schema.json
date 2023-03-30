@@ -29,11 +29,11 @@
     "altText": {
       "type": "string"
     },
-    "blog": {
+    "blogs": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::blog.blog",
-      "mappedBy": "blog_author"
+      "mappedBy": "blog_authors"
     }
   }
 }
