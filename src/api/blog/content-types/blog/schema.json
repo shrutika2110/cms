@@ -88,17 +88,17 @@
       "type": "uid",
       "targetField": "Title"
     },
-    "blog_author": {
+    "blog_authors": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::blog-author.blog-author",
-      "inversedBy": "blog"
+      "inversedBy": "blogs"
     },
-    "blog_category": {
+    "blog_categories": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToMany",
       "target": "api::blog-category.blog-category",
-      "inversedBy": "blog"
+      "inversedBy": "blogs"
     },
     "views": {
       "type": "biginteger"
