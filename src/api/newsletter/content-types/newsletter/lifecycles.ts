@@ -5,9 +5,8 @@ module.exports={
          sgMail.setApiKey(process.env.SENDGRID_API_KEY)
          const msg = {
            to: result.email, // Change to your recipient
-           from: 'email.gmail.com', // Change to your verified sender
-           subject: 'From Armani',
-           template_id: 'd-7b88b835fc6c4af7aaf9c2f8650d14dc', //Change Template
+           from: 'newsletter@kofuku.com', // Change to your verified sender
+           template_id: 'd-cd09b3a3e46f4472a89f596ca7b060f5', //Change Template
          }
          sgMail
            .send(msg)
@@ -16,7 +15,7 @@ module.exports={
              
            })
            .catch((error) => {
-             console.error(error.response.body,"???")
+             console.error(error.response.body)
            })
      }
  }

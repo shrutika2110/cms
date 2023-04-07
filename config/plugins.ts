@@ -5,8 +5,8 @@ module.exports = ({ env }) => ({
         apiKey: env('SENDGRID_API_KEY'),
       },
       settings: {
-        defaultFrom:  'email.gmail.com', //Sender Verified Email
-        defaultReplyTo:  'email.gmail.com', //Sender Verified Email
+        defaultFrom:  'newsletter@kofuku.com', //Sender Verified Email
+        defaultReplyTo:  'newsletter@kofuku.com', //Sender Verified Email
       },
     },
   });
