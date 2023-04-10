@@ -102,6 +102,11 @@
     },
     "views": {
       "type": "biginteger"
+    },
+    "seventhFold": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fold.fold"
     }
   }
 }
