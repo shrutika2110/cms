@@ -107,6 +107,9 @@
       "type": "component",
       "repeatable": false,
       "component": "fold.fold"
+    },
+    "sub_description": {
+      "type": "string"
     }
   }
 }
