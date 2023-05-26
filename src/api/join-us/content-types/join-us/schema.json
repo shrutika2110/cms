@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "join_uses",
+  "info": {
+    "singularName": "join-us",
+    "pluralName": "join-uses",
+    "displayName": "JoinUs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fold.fold"
+    },
+    "crewSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fold.fold"
+    },
+    "dnaSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section.section"
+    },
+    "cultureImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
