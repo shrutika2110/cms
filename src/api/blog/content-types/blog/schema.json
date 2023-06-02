@@ -110,6 +110,9 @@
     },
     "sub_description": {
       "type": "string"
+    },
+    "videoViews": {
+      "type": "biginteger"
     }
   }
 }
