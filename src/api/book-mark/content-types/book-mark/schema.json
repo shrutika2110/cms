@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_marks",
+  "info": {
+    "singularName": "book-mark",
+    "pluralName": "book-marks",
+    "displayName": "BookMark"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "string"
+    },
+    "blog": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blog.blog"
+    }
+  }
+}
