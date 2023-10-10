@@ -113,6 +113,9 @@
     },
     "videoViews": {
       "type": "biginteger"
+    },
+    "trending": {
+      "type": "boolean"
     }
   }
 }
