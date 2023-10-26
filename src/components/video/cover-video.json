@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_video_cover_videos",
+  "info": {
+    "displayName": "coverVideo"
+  },
+  "options": {},
+  "attributes": {
+    "smallVideo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "altText": {
+      "type": "string"
+    }
+  }
+}
