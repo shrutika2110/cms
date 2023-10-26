@@ -24,6 +24,12 @@
     },
     "views": {
       "type": "biginteger"
+    },
+    "coverVideo": {
+      "displayName": "coverVideo",
+      "type": "component",
+      "repeatable": false,
+      "component": "video.cover-video"
     }
   }
 }
