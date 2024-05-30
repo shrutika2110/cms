@@ -37,6 +37,10 @@
     },
     "Duration": {
       "type": "integer"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
     }
   }
 }
