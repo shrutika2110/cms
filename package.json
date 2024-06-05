@@ -10,7 +10,6 @@
     "transfer": "strapi transfer --from  https://kofuku-cms.blr0.geekydev.com/admin",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "@strapi/plugin-graphql": "4.11.2",
@@ -18,6 +17,7 @@
     "@strapi/plugin-users-permissions": "4.11.2",
     "@strapi/provider-upload-aws-s3": "^4.14.3",
     "@strapi/strapi": "4.11.2",
+    "axios": "^1.7.2",
     "pg": "^8.9.0"
   },
   "author": {
