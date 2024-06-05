@@ -2,7 +2,7 @@
   
 module.exports = {
   lifecycles: {
-   afterCreate(event:any) {
+   afterCreate(event) {
     console.log("[Lifecycle][AfterCrete]", event);
   }
   }
