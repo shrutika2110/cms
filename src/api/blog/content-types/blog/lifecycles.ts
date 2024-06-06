@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export default {
+module.exports =  {
   async afterCreate(event: any) {
     try {
       const { result } = event;
