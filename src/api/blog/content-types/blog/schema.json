@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "Title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "shortDes": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "coverImg": {
       "type": "media",
