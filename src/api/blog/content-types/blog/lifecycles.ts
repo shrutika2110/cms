@@ -1,7 +1,7 @@
-import axios from 'axios';
+// import axios from 'axios';
 
 module.exports =  {
-  async beforeCreate(event) {
+  async afterCreate(event) {
     try {
       const { result, params } = event;
       console.log("event", event);
@@ -28,9 +28,9 @@ module.exports =  {
         variables: { coverimg, state, title }
       };
 
-      const response = await axios.post(endpoint, graphqlQuery, { headers });
-      console.log(response.data);
-      console.log(response.status);
+      // const response = await axios.post(endpoint, graphqlQuery, { headers });
+      // console.log(response.data);
+      // console.log(response.status);
     } catch (error) {
       console.error('Error:', error);
     }
