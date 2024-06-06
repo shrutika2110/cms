@@ -1,10 +1,11 @@
 import axios from 'axios';
 
 module.exports =  {
-  async afterCreate(event: any) {
+  async beforeCreate(event) {
     try {
-      const { result } = event;
+      const { result, params } = event;
       console.log("event", event);
+      console.log({params})
       console.log("result", result);
       
       const { title, coverimg, state } = result;

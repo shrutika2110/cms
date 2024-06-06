@@ -17,7 +17,7 @@ module.exports = {
         to: recipientEmail, // Change to your recipient
         from: 'newsletter@kofuku.com', // Change to your verified sender
         template_id: 'd-cd09b3a3e46f4472a89f596ca7b060f5', // Change Template
-      };
+      };  
 
       await sgMail.send(msg);
       console.log('Email sent',msg);
