@@ -19,8 +19,8 @@ module.exports =  {
       };
       const graphqlQuery = {
         query: `
-          mutation notifyFromStrapi($coverimg: String, $state: String, $title: String) {
-            notifyFromStrapi(coverimg: $coverimg, state: $state, title: $title) {
+          mutation notifyFromStrapi($coverimg: String, $title: String) {
+            notifyFromStrapi(coverimg: $coverimg, title: $title) {
               message
               success
             }
