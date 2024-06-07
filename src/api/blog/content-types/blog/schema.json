@@ -72,6 +72,9 @@
     "good_read": {
       "type": "boolean"
     },
+    "hero_slider": {
+      "type": "boolean"
+    },
     "recommended": {
       "type": "boolean"
     },
