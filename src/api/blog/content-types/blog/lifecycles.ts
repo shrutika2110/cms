@@ -8,8 +8,12 @@ module.exports =  {
       
       const { Title, coverImg } = result;
       console.log({ Title, coverImg });
-      
+      let url = "";
+      if(coverImg){
+        url = coverImg.url
+      }      
       const endpoint = process.env.GRAPHQL_BACKEND_ENDPOINT;
+      console.log(endpoint)
       const headers = {
         "content-type": "application/json",
       };
@@ -22,9 +26,9 @@ module.exports =  {
             }
           }
         `,
-        variables: { coverimg: coverImg, title: Title }
+        variables: { coverimg: url, title: Title }
       };
-
+      console.log(graphqlQuery)
       const response = await axios.post(endpoint, graphqlQuery, { headers });
       console.log(response.data);
       console.log(response.status);
