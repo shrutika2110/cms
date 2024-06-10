@@ -18,8 +18,11 @@
     "answer": {
       "type": "richtext"
     },
-    "type": {
-      "type": "string"
+    "faq_types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::faq-type.faq-type",
+      "inversedBy": "all_faqs"
     }
   }
 }
