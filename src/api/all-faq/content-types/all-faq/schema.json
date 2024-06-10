@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "basics_faqs",
+  "collectionName": "all_faqs",
   "info": {
-    "singularName": "basics-faq",
-    "pluralName": "basics-faqs",
-    "displayName": "BasicsFaq",
+    "singularName": "all-faq",
+    "pluralName": "all-faqs",
+    "displayName": "AllFaq",
     "description": ""
   },
   "options": {
@@ -17,6 +17,9 @@
     },
     "answer": {
       "type": "richtext"
+    },
+    "type": {
+      "type": "string"
     }
   }
 }
