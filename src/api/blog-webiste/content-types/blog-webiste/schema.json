@@ -4,7 +4,7 @@
   "info": {
     "singularName": "blog-webiste",
     "pluralName": "blog-webistes",
-    "displayName": "BlogWebiste",
+    "displayName": "WebsiteBlog",
     "description": ""
   },
   "options": {
@@ -25,27 +25,29 @@
       "type": "richtext"
     },
     "CoverImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "conclusion": {
       "type": "richtext"
     },
     "BottomImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
