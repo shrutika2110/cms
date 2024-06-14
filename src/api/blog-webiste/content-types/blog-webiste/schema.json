@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_webistes",
+  "info": {
+    "singularName": "blog-webiste",
+    "pluralName": "blog-webistes",
+    "displayName": "BlogWebiste",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "shortDes": {
+      "type": "text"
+    },
+    "publish_date": {
+      "type": "date"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "CoverImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "conclusion": {
+      "type": "richtext"
+    },
+    "BottomImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
