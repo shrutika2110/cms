@@ -25,7 +25,15 @@ export default [
         },
       },
     },
+
   },
+  // {
+  //   name: 'strapi::cors',
+  //   config: {
+  //     enabled: true,
+  //     headers: '*',
+  //   }
+  // },
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',
