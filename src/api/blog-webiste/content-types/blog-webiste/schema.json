@@ -49,12 +49,6 @@
         "audios"
       ]
     },
-    "blog_authors": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::blog-author.blog-author",
-      "inversedBy": "website_blogs"
-    },
     "slug": {
       "type": "uid",
       "targetField": "Title"
