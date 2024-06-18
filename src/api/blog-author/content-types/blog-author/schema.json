@@ -34,12 +34,6 @@
       "relation": "manyToMany",
       "target": "api::blog.blog",
       "mappedBy": "blog_authors"
-    },
-    "website_blogs": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::blog-webiste.blog-webiste",
-      "mappedBy": "blog_authors"
     }
   }
 }
