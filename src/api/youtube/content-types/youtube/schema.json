@@ -32,15 +32,12 @@
         "audios"
       ]
     },
-    "Date": {
-      "type": "date"
-    },
-    "Duration": {
-      "type": "integer"
-    },
     "slug": {
       "type": "uid",
       "targetField": "Title"
+    },
+    "publish_date": {
+      "type": "date"
     }
   }
 }
