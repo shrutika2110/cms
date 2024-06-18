@@ -118,6 +118,9 @@
     },
     "trending": {
       "type": "boolean"
+    },
+    "readDuration": {
+      "type": "string"
     }
   }
 }
