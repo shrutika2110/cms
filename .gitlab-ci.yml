@@ -1,0 +1,43 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  tags:
+    - Kofuku-Common-Runner
+  script: |
+    #!/bin/bash
+
+    check_pipeline_status() {
+        local pipeline_status=$(curl -u admin:${JENKINS_API_TOKEN} -s "https://${JENKINS_SERVER}/job/Kofuku-CMS/$1/api/json" | jq -r '.inProgress' 2>/dev/null)
+        echo "$pipeline_status"
+    }
+
+    lastBuild_no=$(curl -u admin:${JENKINS_API_TOKEN} -s https://${JENKINS_SERVER}/job/Kofuku-CMS/lastBuild/api/json | jq -r '.number')
+    echo "Last Build Number: $lastBuild_no"
+
+    currentBuild_no=$((lastBuild_no + 1))
+    echo "Current Build Number: $currentBuild_no"
+
+    curl -X POST -u admin:${JENKINS_API_TOKEN} https://${JENKINS_SERVER}/job/Kofuku-CMS/build
+
+    while true; do
+        pipeline_status=$(check_pipeline_status "$currentBuild_no")
+        if [ "$pipeline_status" == "false" ]; then
+            break
+        fi
+        echo "Pipeline Running"
+        sleep 10 
+    done
+
+    build_status=$(curl -u admin:${JENKINS_API_TOKEN} -s https://${JENKINS_SERVER}/job/Kofuku-CMS/$currentBuild_no/api/json | jq -r '.result')
+    echo "$build_status"
+
+    if [ "$build_status" == "FAILURE" ]; then
+        echo "Build failed"
+        exit 1
+    fi
+
+  only: 
+    - develop
+    - devops-pipeline
