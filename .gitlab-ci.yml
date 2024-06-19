@@ -40,4 +40,3 @@ deploy:
 
   only: 
     - develop
-    - devops-pipeline
