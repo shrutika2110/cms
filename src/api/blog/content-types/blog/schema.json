@@ -121,12 +121,6 @@
     },
     "readDuration": {
       "type": "string"
-    },
-    "recommendeds": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::recommended.recommended",
-      "inversedBy": "blogs"
     }
   }
 }
