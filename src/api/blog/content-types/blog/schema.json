@@ -122,11 +122,11 @@
     "readDuration": {
       "type": "string"
     },
-    "recommendeds": {
+    "recommends": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::recommended.recommended",
-      "inversedBy": "blogs"
+      "relation": "oneToMany",
+      "target": "api::recommend.recommend",
+      "mappedBy": "blog"
     }
   }
 }
