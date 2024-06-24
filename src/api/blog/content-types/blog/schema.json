@@ -124,9 +124,9 @@
     },
     "recommends": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::recommend.recommend",
-      "mappedBy": "blogs"
+      "mappedBy": "blog"
     }
   }
 }

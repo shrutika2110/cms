@@ -12,9 +12,9 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "blogs": {
+    "blog": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::blog.blog",
       "inversedBy": "recommends"
     }
