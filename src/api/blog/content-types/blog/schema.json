@@ -125,8 +125,13 @@
     "recommends": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::recommend.recommend",
-      "mappedBy": "blog"
+      "target": "api::recommend.recommend"
+    },
+    "RecomendedBlog": {
+      "displayName": "blog",
+      "type": "component",
+      "repeatable": false,
+      "component": "blog.blog"
     }
   }
 }

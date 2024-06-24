@@ -12,11 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "blog": {
+    "blogs": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::blog.blog",
-      "inversedBy": "recommends"
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
     }
   }
 }
